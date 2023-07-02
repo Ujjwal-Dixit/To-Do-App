@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- APP Container -->
+  <div class="app">
+
+    <div class="sticky">
+      <h4>To-Do List</h4>
+      <div class="addNew">
+        <span>Add New Task</span>
+        <i class="fas fa-plus" id="open-modal"></i>
+      </div>
+      <h5>Tasks</h5>
+    </div>
+
+    <!-- Modal container-->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 class="modal-details">Task Details</h2>
+        <form>
+          <label for="task-title">Task Title:</label>
+          <input type="text" id="task-title" required>
+
+          <label for="task-date">Due Date:</label>
+          <input type="date" id="task-date" required>
+
+          <label for="task-description">Task Description:</label>
+          <textarea id="task-description" required></textarea>
+
+          <button type="submit">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Task Container -->
+    <div class="tasks-container">
+
+      <!-- <div>
+        <span class="task-title">Task 1</span>
+        <span class="task-date">01/07/2023</span>
+        <p>Going to gym</p>
+        <span class="options">
+          <i class="fas fa-edit"></i>
+          <i class="fas fa-trash-alt"></i>
+        </span>
+      </div> -->
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
